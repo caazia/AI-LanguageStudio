@@ -199,19 +199,25 @@ Para executar, precisei utilizar o serviço Azure IA Service, através os seguin
 1. Acessei o  [Azure AI Speech Studio](https://speech.microsoft.com/portal);
 2. Aqui foi necessário associar o AI Speech Studio ao recurso Azure IA Service:
 - Mudar recurso: 
+
 ![Mudar recurso](./inputs/img01.png)
 
 - Selecionar recurso:
+
 ![Selecionar recurso](./inputs/img02.png)
 
 3. Selecione https://aka.ms/mslearn-speech-files para baixar o Speech.zip. Abra a pasta.
 
 4. Na página Introdução à fala, em Fala para texto, localize "Fala em tempo real para texto". Selecione Experimente a fala em tempo real para texto:
+
 ![Fala em texto](./inputs/img03.png)
 
 5. Em Escolher arquivos de áudio, selecione procurar arquivos e navegue até a pasta onde você salvou o arquivo. Selecione WhatAICanDo.m4a e abra o arquivo.
+
 ![Resultado01](./inputs/img04.png)
+
 ![Resultado02](./inputs/img05.png)
+
 ![Resultado03](./inputs/img06.png)
 
 6. O serviço Speech transcreve e exibe o texto em tempo real. Se você tiver áudio em seu computador, poderá ouvir a gravação enquanto o texto é transcrito.
