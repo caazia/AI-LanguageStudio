@@ -189,9 +189,7 @@ Serviço de bot do Azure
 - Plataforma baseada em nuvem para desenvolvimento e gerenciamento de bots
 - Integração com AI Language e outros serviços
 - Conectividade através de vários canais
-
-
-Compreensão da linguagem coloquial
+- Compreensão da linguagem coloquial
 
 
 ## Reconhecimento e síntese de fala
