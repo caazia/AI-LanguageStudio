@@ -192,6 +192,7 @@ Para executar, precisei utilizar o serviço Azure IA Service, através os seguin
 > - Grupo de recursos: selecione ou crie um grupo de recursos com um nome exclusivo.
 
 3. O serviço foi aprovisionado quando recebi a mensagem Your deployment is complete:
+
 ![Complete](./inputs/img00.png)
 
 ## Explorando a conversão de voz em texto no Speech Studio
@@ -224,9 +225,69 @@ Para executar, precisei utilizar o serviço Azure IA Service, através os seguin
 
 7. Após, revise a saída, que deve ter reconhecido e transcrito com êxito o áudio em texto.
 
+# Crie um recurso de idioma para o  Language Studio
+
+> Você pode usar muitos recursos do Azure AI Language com um recurso de idioma ou de serviços do Azure AI. Existem alguns casos em que apenas um recurso Idioma pode ser usado. Para o exercício abaixo, utilizaremos um recurso Linguagem. Se ainda não o fez, crie um recurso de idioma na sua assinatura do Azure.
+
+1. Em outra guia do navegador, abra o portal do Azure em https://portal.azure.com, entrando com a conta da Microsoft associada à sua assinatura do Azure.
+
+2. Clique no botão ＋Criar um recurso e procure por serviço de idioma. Selecione criar um plano de serviço de idiomas. Você será levado a uma página para selecionar recursos adicionais. Mantenha a seleção padrão e clique em Continuar para criar seu recurso.
+
+![Analise de Texto](./inputs/img07.png)
+
+3. Na página Criar Idioma, configure-o com as seguintes configurações:
+> - Assinatura: sua assinatura do Azure.
+> - Grupo de recursos: selecione ou crie um grupo de recursos com um nome exclusivo.
+> - Região: Leste dos EUA.
+> - Nome: Insira um nome exclusivo.
+> - Nível de preços: F0 grátis ou S se F0 grátis não estiver disponível
+> - Ao marcar esta caixa, confirmo que li e compreendi todos os termos abaixo: Selecionado.
+
+![Criação01](./inputs/img08.png)
+
+![Criação02](./inputs/img09.png)
+
+![Criação03](./inputs/img10.png)
+
+4. Selecione Revisar + criar e depois Criar e aguarde a conclusão da implantação.
+
+![Concluido](./inputs/img11.png)
 
 
+## Explorando a análise de sentimentos com o Azure Language Studio
 
+1. Em outra guia do navegador, abra o Language Studio em https://language.cognitive.azure.com e entre.
+
+2. Quando solicitado com Selecione um recurso do Azure, faça as seguintes configurações:
+> - Diretório Azure: Diretório Padrão, o diretório que você está usando
+> - Assinatura do Azure: selecione a assinatura que você está usando
+> - Tipo de recurso: Idioma
+> - Nome do recurso: selecione o recurso de serviço de idioma que você acabou de criar.
+Em seguida, selecione Concluído.
+
+![Selecionar recurso](./inputs/img12.png)
+
+3. Selecionei a feature Analyze sentiment and mine opinions, que fica dentro do grupo Classify text:
+
+![Feature](./inputs/img13.png)
+
+4. Em Selecionar idioma do texto, selecione Inglês.
+
+5. Em Selecione o seu recurso Azure, selecione o seu recurso.
+
+6. Em Digite seu próprio texto, carregue um arquivo ou use um dos textos de exemplo, peguei o arquivo de exemplo da documentação:
+
+![Texto escrito](./inputs/img14.png)
+
+7. Marque a caixa para confirmar que a demonstração incorrerá em uso e poderá incorrer em custos e selecione executar.
+
+8. Revise a saída. Observe que o documento é analisado quanto ao sentimento, assim como cada frase. 
+
+![Resultado da analise de sentimento 01](./inputs/img15.png)
+
+![Resultado da analise de sentimento 02](./inputs/img16.png)
+
+![Resultado da analise de sentimento 03](./inputs/img17.png)
 
 ### Links
 
