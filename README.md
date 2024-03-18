@@ -11,7 +11,6 @@
 - Identifique os serviços de IA do Azure que incluem processamento de linguagem natural.
 - Use a análise de texto para você mesmo.
 
-
 ## O que é processamento de linguagem natural?
 
 Existem vários processamentos de linguagem natural (PLN) que podem ser aplicados a um texto para 
@@ -67,8 +66,6 @@ Esses são apenas alguns exemplos, e há muitas outras tarefas e técnicas dentr
 de linguagem natural, dependendo dos objetivos específicos de aplicação. O PLN é uma área em constante 
 evolução, com novas abordagens e técnicas sendo desenvolvidas regularmente.
 
-
-
 ## Conceitos de processamento de linguagem natural
 
 Processamento de linguagem natural e IA conversacional no Azure
@@ -101,8 +98,6 @@ Compreensão de perguntas feitas em linguagem natural e fornecimento de resposta
 6. Fala:
 Processamento de fala para reconhecimento de voz e síntese de fala.
 
-
-
 ## Texto para fala
 
 - Conversão de texto para fala
@@ -131,13 +126,11 @@ linguagem natural e suportam múltiplos idiomas. Por exemplo, você poderia cria
 recebe comandos de fala em um idioma, traduz esses comandos para outro idioma e fornece respostas 
 em fala nesse idioma traduzido. Essas capacidades são essenciais para aplicações globais e multilíngues.
 
-
 ## Tradutor
 
 Tradução do texto
 - Tradução personalizada
 - Tradução de documentos
-
 
 No Azure, para realizar tradução de texto e documentos, você pode usar serviços específicos que oferecem 
 funcionalidades avançadas para essas tarefas. Aqui estão alguns serviços relevantes:
@@ -161,20 +154,7 @@ Eles são flexíveis o suficiente para atender a diferentes casos de uso, desde 
 tradução de documentos em lote. Ao integrar esses serviços, você pode construir soluções de tradução 
 personalizadas e escaláveis para atender às necessidades específicas do seu projeto.
 
-
-
-
 Capacidades de processamento de linguagem natural no Azure
-
-## Analisando texto
-
-“Passei férias maravilhosas na França.”
-- Idioma Predominante: Português
-- Fonte: Microsoft
-- Sentimento: 0,88 (positivo)
-- Entidades: França
-- Frases-chave: “férias maravilhosas”
-
 
 ## Resposta a perguntas
 
@@ -183,7 +163,6 @@ Defina uma base de conhecimento de pares de perguntas e respostas:
 - De um documento de perguntas frequentes existente
 - Usando bate-papo integrado
 
-
 Serviço de bot do Azure
 
 - Plataforma baseada em nuvem para desenvolvimento e gerenciamento de bots
@@ -191,14 +170,56 @@ Serviço de bot do Azure
 - Conectividade através de vários canais
 - Compreensão da linguagem coloquial
 
-
 ## Reconhecimento e síntese de fala
 
 - Use os recursos de fala para texto do serviço Fala para transcrever fala audível em texto.
-
-
-Use os recursos de conversão de texto em fala do Serviço de Fala para gerar fala audível a partir de 
+- Use os recursos de conversão de texto em fala do Serviço de Fala para gerar fala audível a partir de 
 texto.
+
+# Aplicação prática: 
+
+## Explorando os recursos do Azure AI Service
+
+Para executar, precisei utilizar o serviço Azure IA Service, através os seguintes passos:
+
+1. Acessei o Azure Portal e efetuei o login com a minha conta Microsoft
+
+2. Efetuei as configurações conforme apresentadas abaixo:
+> - Nome do novo recurso: insira um nome exclusivo.
+> - Assinatura: sua assinatura do Azure.
+> - Região: selecione uma região suportada.
+> - Nível de preços: FO gratuito (se disponível, caso contrário, selecione Standard S0).
+> - Grupo de recursos: selecione ou crie um grupo de recursos com um nome exclusivo.
+
+3. O serviço foi aprovisionado quando recebi a mensagem Your deployment is complete:
+![Complete](./inputs/img00.png)
+
+## Explorando a conversão de voz em texto no Speech Studio
+
+1. Acessei o  [Azure AI Speech Studio](https://speech.microsoft.com/portal);
+2. Aqui foi necessário associar o AI Speech Studio ao recurso Azure IA Service:
+- Mudar recurso: 
+![Mudar recurso](./inputs/img01.png)
+
+- Selecionar recurso:
+![Selecionar recurso](./inputs/img02.png)
+
+3. Selecione https://aka.ms/mslearn-speech-files para baixar o Speech.zip. Abra a pasta.
+
+4. Na página Introdução à fala, em Fala para texto, localize "Fala em tempo real para texto". Selecione Experimente a fala em tempo real para texto:
+![Fala em texto](./inputs/img03.png)
+
+5. Em Escolher arquivos de áudio, selecione procurar arquivos e navegue até a pasta onde você salvou o arquivo. Selecione WhatAICanDo.m4a e abra o arquivo.
+![Resultado01](./inputs/img04.png)
+![Resultado02](./inputs/img05.png)
+![Resultado03](./inputs/img06.png)
+
+6. O serviço Speech transcreve e exibe o texto em tempo real. Se você tiver áudio em seu computador, poderá ouvir a gravação enquanto o texto é transcrito.
+
+7. Após, revise a saída, que deve ter reconhecido e transcrito com êxito o áudio em texto.
+
+
+
 
 
 ### Links
@@ -207,5 +228,6 @@ https://aka.ms/ai900-speech
 
 https://aka.ms/ai900-text-analysis
 
+https://speech.microsoft.com/portal
 
 Documentação Oficial: https://learn.microsoft.com/en-us/training/paths/explore-natural-language-processing/
